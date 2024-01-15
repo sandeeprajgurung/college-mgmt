@@ -1,12 +1,10 @@
-import logo from "./logo.svg";
-import "./App.css";
-import { DatePicker, Button } from "antd";
-import Sidebar from "./ui/modules/components/sidebar";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routes";
 
 function App() {
   return (
     <div className="App">
-      <Sidebar />
+      <RouterProvider router={router} />
     </div>
   );
 }
